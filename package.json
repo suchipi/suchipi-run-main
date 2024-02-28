@@ -1,0 +1,35 @@
+{
+  "name": "@suchipi/run-main",
+  "version": "1.0.0",
+  "description": "CLI app entrypoint function runner",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && tsc && rm -rf dist/*.test.*",
+    "test": "vitest"
+  },
+  "keywords": [
+    "cli",
+    "terminal",
+    "main",
+    "error",
+    "catch",
+    "async"
+  ],
+  "author": "Lily Skye <me@suchipi.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suchipi/suchipi-run-main.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.21",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  },
+  "dependencies": {}
+}
