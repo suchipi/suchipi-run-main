@@ -70,15 +70,14 @@ describe("error thrown", () => {
       50   |       progress++;
 
         at /Users/suchipi/Code/suchipi-run-main/src/index.test.ts:47:13
-        at Module.runMain (/Users/suchipi/Code/suchipi-run-main/src/index.ts:47:20)
+        at runMain (/Users/suchipi/Code/suchipi-run-main/src/index.ts:47:20)
         at /Users/suchipi/Code/suchipi-run-main/src/index.test.ts:45:26
-        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:134:14
-        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:59:26
-        at runTest (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:719:17)
-        at runSuite (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:847:15)
-        at runSuite (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:847:15)
-        at runFiles (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:896:5)
-        at startTests (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:905:3)",
+        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+        at new Promise (<anonymous>)
+        at runWithTimeout (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+        at runTest (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)",
         ],
         "progress": 1,
         "result": [Error: uh oh! we're in trouble! something's come along and it's burst our bubble!],
@@ -119,24 +118,23 @@ describe("error thrown", () => {
         "printedErrors": [
           "Error: uh oh! we're in trouble! something's come along and it's burst our bubble!
 
-      ./src/index.test.ts:105:13                                                      
-      103   |     const result = await runMain(async () => {
-      104   |       progress++;
-      105 > |       throw new Error(
-      106   |         "uh oh! we're in trouble! something's come along and it's bur...
-      107   |       );
-      108   |       progress++;
+      ./src/index.test.ts:104:13                                                      
+      102   |     const result = await runMain(async () => {
+      103   |       progress++;
+      104 > |       throw new Error(
+      105   |         "uh oh! we're in trouble! something's come along and it's bur...
+      106   |       );
+      107   |       progress++;
 
-        at /Users/suchipi/Code/suchipi-run-main/src/index.test.ts:105:13
-        at Module.runMain (/Users/suchipi/Code/suchipi-run-main/src/index.ts:47:20)
-        at /Users/suchipi/Code/suchipi-run-main/src/index.test.ts:103:26
-        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:134:14
-        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:59:26
-        at runTest (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:719:17)
-        at runSuite (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:847:15)
-        at runSuite (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:847:15)
-        at runFiles (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:896:5)
-        at startTests (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:905:3)",
+        at /Users/suchipi/Code/suchipi-run-main/src/index.test.ts:104:13
+        at runMain (/Users/suchipi/Code/suchipi-run-main/src/index.ts:47:20)
+        at /Users/suchipi/Code/suchipi-run-main/src/index.test.ts:102:26
+        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+        at new Promise (<anonymous>)
+        at runWithTimeout (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+        at runTest (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)",
         ],
         "progress": 1,
         "result": [Error: uh oh! we're in trouble! something's come along and it's burst our bubble!],
@@ -185,16 +183,15 @@ describe("non-error value thrown", () => {
       13   |     );
       14   |   }
 
-        at Module.formatError (/Users/suchipi/Code/suchipi-run-main/src/format-error.ts:11:7)
-        at Module.runMain (/Users/suchipi/Code/suchipi-run-main/src/index.ts:67:16)
-        at /Users/suchipi/Code/suchipi-run-main/src/index.test.ts:163:26
-        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:134:14
-        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:59:26
-        at runTest (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:719:17)
-        at runSuite (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:847:15)
-        at runSuite (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:847:15)
-        at runFiles (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:896:5)
-        at startTests (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/index.js:905:3)",
+        at formatError (/Users/suchipi/Code/suchipi-run-main/src/format-error.ts:11:7)
+        at runMain (/Users/suchipi/Code/suchipi-run-main/src/index.ts:67:16)
+        at /Users/suchipi/Code/suchipi-run-main/src/index.test.ts:161:26
+        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+        at file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+        at new Promise (<anonymous>)
+        at runWithTimeout (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+        at runTest (file:///Users/suchipi/Code/suchipi-run-main/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)",
         ],
         "progress": 1,
         "result": 6,
@@ -241,7 +238,7 @@ describe("non-error value thrown", () => {
       13   |     );
       14   |   }
 
-        at Module.formatError (/Users/suchipi/Code/suchipi-run-main/src/format-error.ts:11:7)
+        at formatError (/Users/suchipi/Code/suchipi-run-main/src/format-error.ts:11:7)
         at /Users/suchipi/Code/suchipi-run-main/src/index.ts:58:22",
         ],
         "progress": 1,

@@ -26,15 +26,15 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/node": "^20.11.21",
-    "prettier": "^3.2.5",
-    "typescript": "^5.3.3",
-    "vitest": "^1.3.1"
+    "@types/node": "^24.0.10",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   },
   "dependencies": {
     "@suchipi/defer": "^1.0.0",
     "code-preview-from-error": "^1.0.2",
     "pheno": "^0.12.0",
-    "pretty-print-error": "^1.1.1"
+    "pretty-print-error": "^1.1.2"
   }
 }
